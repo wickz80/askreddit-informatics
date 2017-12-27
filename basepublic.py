@@ -3,12 +3,13 @@ import pprint
 import sqlite3
 import time
 from itertools import islice
+from . import credentials
 
-reddit = praw.Reddit(client_id='',
-                     client_secret='',
-                     password='enterpasswordhere',
-                     user_agent='ask reddit by /u/USER',
-                     username='USER')
+reddit = praw.Reddit(client_id=clientID,
+                     client_secret=clientSecret,
+                     password=PASS,
+                     user_agent='ask reddit by /u/{}'.format(USER),
+                     username=USER)
 
 db = sqlite3.connect(r'C:\questions\questions.DB')
 cur = db.cursor()
