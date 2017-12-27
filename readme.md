@@ -8,11 +8,11 @@ It uses PRAW to talk to the reddit API, and SQLite3 to store data.  From each po
 * Post title (question)
 * Upvotes (score)
 * Created (UTC)
-* reddit ID (link with comments)
-* # comments
+* Reddit ID (link with comments)
+* Number of comments
 * URL
 
-For each post, from the 'top' 10 comments:
+For each post it grabs details about the 'top' 10 comments:
 * Post ID (reddit ID of post)
 * Upvotes (score)
 * Created (UTC)
