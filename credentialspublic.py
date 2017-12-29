@@ -1,4 +1,6 @@
-USER = ''
-PASS = ''
-clientID = 'O7AyABjqEJcvjg'
-clientSecret = ''
+login = {
+	'USER' : '',
+	'PASS' : '',
+	'clientID' : '',
+	'clientSecret' : '',
+}
