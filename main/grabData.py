@@ -1,5 +1,4 @@
 import praw
-import pprint
 import sqlite3
 import time
 from itertools import islice
@@ -11,7 +10,7 @@ reddit = praw.Reddit(client_id=credentials.login['clientID'],
                      user_agent='ask reddit by /u/{}'.format(credentials.login['USER']),
                      username=credentials.login['USER'])
 
-db = sqlite3.connect(r'C:\questions\questions.DB')
+db = sqlite3.connect(r'questions.DB')
 cur = db.cursor()
 
 def populate_Existing_IDs():
