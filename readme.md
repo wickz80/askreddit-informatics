@@ -2,7 +2,7 @@
 
 ***
 
-Askreddit-informatics pulls down questions and comments(answers) from the AskReddit subreddit on the site reddit.com.
+Askreddit-informatics pulls down questions and comments(answers) from AskReddit on the site reddit.com.
 
 It uses PRAW to talk to the reddit API, and SQLite3 to store data.  From each post, it gets:
 * Post title (question)
